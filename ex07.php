@@ -25,6 +25,7 @@ $estoc = 5;
 <?php } else { ?>
     <p>Esgotat</p>
 <?php } ?>
+
 //Segundo metodo --> Mucho mas lejible
 <?php if ($estoc > 0): ?>
     <p>En estoc</p>
@@ -49,7 +50,7 @@ switch ($zona){
         $enviament = 9.95;
 }
 ?>
-//Case math
+//Case match
 <?php
 $enviament = match ($zona) {
     'local'     => 0,
@@ -116,7 +117,7 @@ do{
     print_r($colores);
 ?>
 
-//Array asociativo 
+//Array asociativo
 <?php
     $producto = [
         'nombre'    => 'Teclado mecanico',
@@ -164,10 +165,61 @@ do{
 <?php endforeach; ?>
 
 //FUNCIONES PRESTABLECIDAS
-count($a) --> Cuantos elementos tiene
-in_array ($x , $a, true) --> Si un valor esta
-array_key_exist('k', $a) --> Si una llave existe
-sort / rsort / ksort --> Ordena per valor o per clau
+
+count($a) 
+    --> Cuenta todos los elementos de un array o en un objeto
+    <?php
+        $a[0] = 1;
+        $a[1] = 3;
+        $a[2] = 5;
+        var_dump(count($a));
+
+        $b[0]  = 7;
+        $b[5]  = 9;
+        $b[10] = 11;
+        var_dump(count($b));
+    ?>
+    //Que mostrara
+        int(3)
+        int(3)
+
+in_array ($x , $a, true) 
+    --> Busca $x en $a utilizando una comparación flexible a menos que true sea utilizado. 
+    <?php
+        $os = array("Mac", "NT", "Irix", "Linux");
+        if (in_array("Irix", $os)) {
+            echo "Got Irix";
+        }
+        if (in_array("mac", $os)) {
+            echo "Got mac";
+        }
+    ?>
+
+array_key_exist('k', $a) 
+    --> Si una llave existe
+
+
+sort / rsort / ksort
+    #sort 
+    --> Ordena array en su lugar siguiendo los valores en orden creciente.
+    <?php
+        $fruits = array("lemon", "orange", "banana", "apple");
+        sort($fruits);
+        foreach ($fruits as $key => $val) {
+            echo "fruits[" . $key . "] = " . $val . "\n";
+        }
+    ?>
+    //Que mostrara
+        fruits[0] = apple
+        fruits[1] = banana
+        fruits[2] = lemon
+        fruits[3] = orange
+    
+    #rsort
+    -->
+    #ksort
+    -->
+
 array_sum / max / min --> Suma, maximo, minimo
 array_colum($a, 'precio') --> Quita una columna de una array asociativa
 implode(', ', $a) / explode --> Array a texto y texto a array

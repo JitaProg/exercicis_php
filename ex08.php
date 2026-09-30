@@ -3,10 +3,8 @@ Crear un array asociativo con:
 - curso
 - edat
 - nota_media
-
-10 alumnos
-
-Mostrar en table html
+- 10 alumnos
+- Mostrar en table html
 
 <?php
     $alumnos = [
@@ -21,11 +19,6 @@ Mostrar en table html
         ['nombre' => 'Victor', 'curso' => 'DAW', 'edat' => 18, 'nota_media' => 8.5],
         ['nombre' => 'Navau', 'curso' => 'DAW', 'edat' => 18, 'nota_media' => 8.5],
     ]
-
-    /* COUNT
-    count — Cuenta todos los elementos de un array o en un objeto
-    */
-    $total_alumnos = count($alumnos);
 ?>
 
 <!DOCTYPE html>
@@ -61,6 +54,5 @@ Mostrar en table html
             </tr>
         <?php endforeach; ?>
     </table>
-    <p><?="Total de alumnos: $total_alumnos"?></p>
 </body>
 </html>
