@@ -1,0 +1,45 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(42, 42, 42);
+            height: 100vh;
+        }
+        form{
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1{
+            text-decoration: underline;
+        }
+
+        span{
+            margin-top: -20px;
+            color: gray;
+        }
+
+        form input, 
+        button, 
+        select{
+            text-align: center;
+            width: 300px;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        button{
+            background-color: rgb(99, 99, 224);
+            color: white;
+        }

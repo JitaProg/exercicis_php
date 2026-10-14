@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div>
+        <!--action: donde van los datos-->
+
+        <!--method: como van (GET O POST)-->
+        <form action="pas1-resultado.php" method="get">
+            <h1>Inscripcion al festival</h1>
+            <span>Grupo: Uña y carne</span>
+
+            <input type="text" id="nom" name="nom" placeholder="Introduce un nombre">
+            <input type="email" id="correo" name="correo" placeholder="Introduce tu correo">
+            
+            <select name="dia" id="dia">
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sabado</option>
+            </select>
+
+            <button>Inscribirme</button>
+        </form>
+    </div>
+</body>
+</html>
