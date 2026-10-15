@@ -21,6 +21,10 @@
             padding: 20px;
             border-radius: 10px;
         }
+        .fondoForm{
+            background-color: aliceblue;
+        }
+
         h1{
             text-decoration: underline;
         }
