@@ -50,13 +50,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
             <input type="text" id="nom" name="nom" placeholder="Introduce un nombre">
             <input type="email" id="correo" name="correo" placeholder="Introduce tu correo">
-            <?php if(strcmp($compruevaCorreo, $correo)): ?>
-                
-            <?php else ?>
-            
-            <?php endif; ?>
-            <input type="email" id="compruevaCorreo" name="compruevaCorreo" placeholder="Repite tu correo">
-
             <select name="dia" id="dia">
                 <option value="viernes">Viernes</option>
                 <option value="sabado">Sabado</option>

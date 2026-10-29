@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitBazar</title>
+    <link rel="stylesheet" href="estils.css">
+</head>
+
+<body>
+    <form action="processa.php" method="post">
+        <fieldset class="datos-personales">
+            <legend>Datos personales</legend>
+            <input type="text" name="name" placeholder="Tu nombre">
+            <input type="text" name="lastName" placeholder="Tus apellidos">
+            <input type="date" name="date" placeholder="Fecha nacimiento">
+            <input type="tel" name="phone" placeholder="Numero de telefono">
+        </fieldset>
+        <fieldset class="datos-cuenta">
+            <legend>Datos cuenta</legend>
+            <input type="email" name="email" placeholder="Tu email">
+            <input type="text" name="nameUser" placeholder="Nombre usuario cuenta">
+            <input type="password" name="password" placeholder="Contraseña">
+            <input type="password" name="passwordTwo" placeholder="Repite tu contraseña">
+        </fieldset>
+        <fieldset class="direccion">
+            <legend>Direccion</legend>
+            <input type="text" name="street" placeholder="Tu direccion">
+            <input type="text" name="city" placeholder="Tu poblacion">
+            <input type="text" name="postalCode" placeholder="Codigo postal">
+        </fieldset>
+        <fieldset class="preferencias">
+            <legend>Preferencias</legend>
+            <div class="box">
+                <select name="tipeClient">
+                    <option value="">Selecciona una opcion</option>
+                    <option value="Informatico">Informatico</option>
+                    <option value="Empresario">Empresario</option>
+                </select>
+            </div>
+            <div class="box">
+                <label for="conocer">Como nos conociste?</label>
+                <label><input type="radio" name="conocer" value="Redes sociales">Redes Sociales</label>
+                <label><input type="radio" name="conocer" value="Amigos">Amigos</label>
+                <label><input type="radio" name="conocer" value="Paginas amarillas">Paginas amarillas</label>
+            </div>
+            <div class="box">
+                <label for="boletin">Quiere recibir info?</label>
+                <label><input type="checkbox" name="boletin" value="si">Sí</label>
+            </div>
+            <div class="box">
+                <label for="condiciones">Acepta las condiciones?</label>
+                <label><input type="checkbox" name="condiciones" value="si">Sí</label>
+            </div>
+        </fieldset>
+        <button type="submit">Crear cuenta</button>
+    </form>
+</body>
+
+</html>
